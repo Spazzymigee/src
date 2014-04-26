@@ -49,3 +49,23 @@ item.shovel_ultimate_poop.name=Ultimate Poop Shovel
 item.sword_ultimate_poop.name=Ultimate Poop Sword
 item.hoe_ultimate_poop.name=Ultimate Hoe
 
+
+item.helmet_poop.name=Poop Helmet
+item.plate_poop.name=Poop Chestplate
+item.legs_poop.name=Poop Leggings
+item.boots_poop.name=Poop Boots
+
+item.helmet_bird_poop.name=Bird Poop Helmet
+item.plate_bird_poop.name=Bird Poop Chestplate
+item.legs_bird_poop.name=Bird Poop Leggings
+item.boots_bird_poop.name=Bird Poop Boots
+
+item.helmet_manure.name=Manure Helmet
+item.plate_manure.name=Manure Chestplate
+item.legs_manure.name=Manure Leggings
+item.boots_manure.name=Manure Boots
+
+item.helmet_ultimate_poop.name=Ultimate Poop Helmet
+item.plate_ultimate_poop.name=Ultimate Poop Chestplate
+item.legs_ultimate_poop.name=Ultimate Poop Leggings
+item.boots_ultimate_poop.name=Ultimate Poop Boots
