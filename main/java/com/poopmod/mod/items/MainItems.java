@@ -1,8 +1,14 @@
 package com.poopmod.mod.items;
 
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidRegistry;
+
 import com.poopmod.mod.PoopMod;
 import com.poopmod.mod.armor.PoopArmor;
+import com.poopmod.mod.blocks.MainBlocks;
 import com.poopmod.mod.manager.ConfigManager;
 import com.poopmod.mod.manager.EnumManager;
 import com.poopmod.mod.tools.PoopAxe;
@@ -10,7 +16,9 @@ import com.poopmod.mod.tools.PoopHoe;
 import com.poopmod.mod.tools.PoopPickaxe;
 import com.poopmod.mod.tools.PoopSpade;
 import com.poopmod.mod.tools.PoopSword;
+
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class MainItems {
 	
@@ -23,6 +31,7 @@ public class MainItems {
 	public static Item ItemManureClean;
 	public static Item ItemPoopball;
 	public static Item UltimatePoopIngot;
+	public static Item DiarrheaBucket;
     
 //tools
     //poop tools
@@ -88,7 +97,11 @@ public class MainItems {
         ItemManure = new ItemPoop(ConfigManager.ManureId, 2, 1.2F, true).setAlwaysEdible().setUnlocalizedName("manure").setCreativeTab(PoopMod.poopytab).setTextureName("poopmod:cowpoop");
         ItemManureClean = new ItemPoop(ConfigManager.CleanManureId, 4, 1.2F, true).setAlwaysEdible().setUnlocalizedName("clean_manure").setCreativeTab(PoopMod.poopytab).setTextureName("poopmod:cowpoopclean");
         UltimatePoopIngot = new ItemPoop(ConfigManager.UltimatePoopIngotId, 8, 1.5F, true).setAlwaysEdible().setUnlocalizedName("ultimate_poop_alloy").setCreativeTab(PoopMod.poopytab).setTextureName("poopmod:ultimatepoopingot");
-        
+        /*
+        DiarrheaBucket = new ItemDiarrheaBucket(MainBlocks.BlockFluidDiarrhea).setUnlocalizedName("Bucket_Diarrhea").setContainerItem(Items.bucket);
+        GameRegistry.registerItem(DiarrheaBucket, "Bucket_Diarrhea");
+        FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack("Fluid_Diarrhea", FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(DiarrheaBucket), new ItemStack(Items.bucket));
+        */
         //Tools
         shovelPoop = (new PoopSpade(EnumManager.toolPoop)).setCreativeTab(PoopMod.poopytab).setTextureName("poopmod:poop_shovel").setUnlocalizedName("shovel_poop");
         pickaxePoop = (new PoopPickaxe(EnumManager.toolPoop)).setCreativeTab(PoopMod.poopytab).setTextureName("poopmod:poop_pickaxe").setUnlocalizedName("pickaxe_poop");

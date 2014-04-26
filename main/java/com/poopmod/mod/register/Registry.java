@@ -1,10 +1,12 @@
 package com.poopmod.mod.register;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fluids.FluidRegistry;
 
 import com.poopmod.mod.PoopMod;
 import com.poopmod.mod.blocks.MainBlocks;
 import com.poopmod.mod.entity.EntityPoopball;
+import com.poopmod.mod.handler.BucketHandler;
 import com.poopmod.mod.handler.PoopDropingHandler;
 import com.poopmod.mod.handler.SoundHandler;
 import com.poopmod.mod.items.MainItems;
@@ -26,6 +28,10 @@ public class Registry {
 		 MinecraftForge.EVENT_BUS.register(new PoopDropingHandler());
 	    	MinecraftForge.EVENT_BUS.register(new SoundHandler());
 	    	FMLCommonHandler.instance().bus().register(new PoopDropingHandler());
+	    	/*
+	    	BucketHandler.INSTANCE.buckets.put(MainBlocks.BlockFluidDiarrhea, MainItems.DiarrheaBucket);
+	    	MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
+			*/
 	}
 	
 	public static void RegisterBlocks(FMLPreInitializationEvent event){
@@ -38,6 +44,9 @@ public class Registry {
         GameRegistry.registerBlock(MainBlocks.BlockManure, MainBlocks.BlockManure.getUnlocalizedName());
         GameRegistry.registerBlock(MainBlocks.BlockManureClean, MainBlocks.BlockManureClean.getUnlocalizedName());
         GameRegistry.registerBlock(MainBlocks.UltimatePoopBlock, MainBlocks.UltimatePoopBlock.getUnlocalizedName());
+        
+
+
 	}
 	
 	public static void RegisterItems(FMLPreInitializationEvent event){
@@ -50,6 +59,7 @@ public class Registry {
 		GameRegistry.registerItem(MainItems.ItemManure, MainItems.ItemManure.getUnlocalizedName());
 		GameRegistry.registerItem(MainItems.ItemManureClean, MainItems.ItemManureClean.getUnlocalizedName());
 		GameRegistry.registerItem(MainItems.UltimatePoopIngot, MainItems.UltimatePoopIngot.getUnlocalizedName());
+		//GameRegistry.registerItem(MainItems.DiarrheaBucket, MainItems.DiarrheaBucket.getUnlocalizedName());
 		
 		GameRegistry.registerItem(MainItems.pickaxePoop, MainItems.pickaxePoop.getUnlocalizedName());
 		GameRegistry.registerItem(MainItems.axePoop, MainItems.axePoop.getUnlocalizedName());

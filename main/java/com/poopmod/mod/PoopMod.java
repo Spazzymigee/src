@@ -45,9 +45,9 @@ public class PoopMod{
             Registry.RegisterEntitys(event);
             EnumManager.addEnumTypes(event);
             MainBlocks.addBlocks(event);
+            Registry.RegisterBlocks(event);   
             MainItems.addItems(event);
             Registry.RegisterItems(event);
-            Registry.RegisterBlocks(event);   
             Registry.RegisterBlockHarvestlevel(event);
             Achievments.addAchievments(event);
             RecipeManager.addRecipes();

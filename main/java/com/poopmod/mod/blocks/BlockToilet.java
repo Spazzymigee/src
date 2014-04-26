@@ -27,7 +27,7 @@ public class BlockToilet extends Block
 	 @SuppressWarnings("unused")
 	private final boolean powered;
 
-        public BlockToilet (int id, Material material, boolean par2)
+        public BlockToilet (int toiletId, Material material, boolean par2)
         {
                 super(material);
                 this.blockHardness = 4F;

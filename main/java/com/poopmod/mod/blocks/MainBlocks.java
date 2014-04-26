@@ -1,12 +1,17 @@
 package com.poopmod.mod.blocks;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialLiquid;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
 
 import com.poopmod.mod.PoopMod;
 import com.poopmod.mod.manager.ConfigManager;
 
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class MainBlocks {
 	
@@ -18,7 +23,9 @@ public class MainBlocks {
     public static Block BlockManure;
     public static Block BlockManureClean;
     public static Block UltimatePoopBlock;
-    
+    public static Fluid FluidDiarrhea;
+    public static Block BlockFluidDiarrhea;
+    public static Material MaterialDiarrhea;
 	public static void addBlocks(FMLPreInitializationEvent event){
 		
 		toilet = new BlockToilet(ConfigManager.toiletId, Material.iron, false).setStepSound(Block.soundTypeMetal).setBlockName("toilet").setCreativeTab(PoopMod.poopytab);
@@ -30,6 +37,15 @@ public class MainBlocks {
         BlockManureClean = new BlockPoop(ConfigManager.BlockManureCleanId, Material.ground).setStepSound(Block.soundTypeSand).setBlockName("clean_manure_block").setCreativeTab(PoopMod.poopytab).setBlockTextureName("poopmod:cowpoopclean");
         UltimatePoopBlock = new BlockPoop(ConfigManager.UltimatePoopBlockId, Material.ground).setStepSound(Block.soundTypeSand).setBlockName("ultimate_poop_block").setCreativeTab(PoopMod.poopytab).setBlockTextureName("poopmod:ultimatepoopblock");
 
+        FluidDiarrhea = new Fluid("Fluid_Diarrhea");
+        FluidRegistry.registerFluid(FluidDiarrhea);
+        
+        MaterialDiarrhea = new MaterialLiquid(MapColor.brownColor);
+        
+        BlockFluidDiarrhea = new BlockDiarrhea(FluidDiarrhea, MaterialDiarrhea).setBlockName("Fluid_Diarrhea");
+        GameRegistry.registerBlock(MainBlocks.BlockFluidDiarrhea, MainBlocks.BlockFluidDiarrhea.getUnlocalizedName());
+        
+        MainBlocks.FluidDiarrhea.setBlock(MainBlocks.BlockFluidDiarrhea);
 	}
 	
 }
