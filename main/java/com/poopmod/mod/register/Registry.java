@@ -9,6 +9,7 @@ import com.poopmod.mod.handler.PoopDropingHandler;
 import com.poopmod.mod.handler.SoundHandler;
 import com.poopmod.mod.items.MainItems;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -19,10 +20,12 @@ public class Registry {
 
 		//Register Entity
         EntityRegistry.registerModEntity(EntityPoopball.class, "Poopball", 1, PoopMod.instance, 120, 3, true);
-        
-        //Register Events
-        MinecraftForge.EVENT_BUS.register(new PoopDropingHandler());
-    	MinecraftForge.EVENT_BUS.register(new SoundHandler());
+	}
+	
+	public static void RegisterEvents(){
+		 MinecraftForge.EVENT_BUS.register(new PoopDropingHandler());
+	    	MinecraftForge.EVENT_BUS.register(new SoundHandler());
+	    	FMLCommonHandler.instance().bus().register(new PoopDropingHandler());
 	}
 	
 	public static void RegisterBlocks(FMLPreInitializationEvent event){
@@ -70,7 +73,29 @@ public class Registry {
 		GameRegistry.registerItem(MainItems.axeUltimate, MainItems.axeUltimate.getUnlocalizedName());
 		GameRegistry.registerItem(MainItems.shovelUltimate, MainItems.shovelUltimate.getUnlocalizedName());
 		GameRegistry.registerItem(MainItems.swordUltimate, MainItems.swordUltimate.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.hoeUltimate, MainItems.hoeUltimate.getUnlocalizedName());
 		
+		
+		GameRegistry.registerItem(MainItems.helmetPoop, MainItems.helmetPoop.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.platePoop, MainItems.platePoop.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.legsPoop, MainItems.legsPoop.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.bootsPoop, MainItems.bootsPoop.getUnlocalizedName());
+		
+		GameRegistry.registerItem(MainItems.helmetBirdPoop, MainItems.helmetBirdPoop.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.plateBirdPoop, MainItems.plateBirdPoop.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.legsBirdPoop, MainItems.legsBirdPoop.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.bootsBirdPoop, MainItems.bootsBirdPoop.getUnlocalizedName());
+		
+		GameRegistry.registerItem(MainItems.helmetManure, MainItems.helmetManure.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.plateManure, MainItems.plateManure.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.legsManure, MainItems.legsManure.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.bootsManure, MainItems.bootsManure.getUnlocalizedName());
+		
+		GameRegistry.registerItem(MainItems.helmetUltimate, MainItems.helmetUltimate.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.plateUltimate, MainItems.plateUltimate.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.legsUltimate, MainItems.legsUltimate.getUnlocalizedName());
+		GameRegistry.registerItem(MainItems.bootsUltimate, MainItems.bootsUltimate.getUnlocalizedName());
+	
 	}
 	
 	public static void RegisterBlockHarvestlevel(FMLPreInitializationEvent event){

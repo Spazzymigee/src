@@ -13,58 +13,58 @@ import com.poopmod.mod.items.MainItems;
 			}
 
 			
-	        public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer)
+	        public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
 	        {
 	        	
 	        		//poop
-	                if(stack == MainItems.helmetPoop.getContainerItem(stack) || stack == MainItems.platePoop.getContainerItem(stack) || stack == MainItems.bootsPoop.getContainerItem(stack))
+	                if(stack.getItem() == MainItems.helmetPoop || stack.getItem() == MainItems.platePoop || stack.getItem() == MainItems.bootsPoop)
 	                {
-	                        return "krebsmodid:textures/armor/POOP_layer_1.png";//1
+	                        return "poopmod:textures/armor/POOP_layer_1.png";//1
 	                }
 	                
-	                if(stack == MainItems.legsPoop.getContainerItem(stack))
+	                if(stack.getItem() == MainItems.legsPoop)
 	                {
-	                        return "krebsmodid:textures/armor/POOP_layer_2.png";//2
+	                        return "poopmod:textures/armor/POOP_layer_2.png";//2
 	                }
 	               
 	                //bird
-	                if(stack == MainItems.helmetBirdPoop.getContainerItem(stack) || stack == MainItems.plateBirdPoop.getContainerItem(stack) || stack == MainItems.bootsBirdPoop.getContainerItem(stack))
+	                if(stack.getItem() == MainItems.helmetBirdPoop || stack.getItem() == MainItems.plateBirdPoop || stack.getItem() == MainItems.bootsBirdPoop)
 	                {
-	                        return "krebsmodid:textures/armor/BIRDPOOP_layer_1.png";//1
+	                        return "poopmod:textures/armor/BIRDPOOP_layer_1.png";//1
 	                }
 	                
-	                if(stack == MainItems.legsBirdPoop.getContainerItem(stack))
+	                if(stack.getItem() == MainItems.legsBirdPoop)
 	                {
-	                        return "krebsmodid:textures/armor/BIRDPOOP_layer_2.png";//2
+	                        return "poopmod:textures/armor/BIRDPOOP_layer_2.png";//2
 	                }
 	                
 	                //cow
-	                if(stack == MainItems.helmetManure.getContainerItem(stack) || stack == MainItems.plateManure.getContainerItem(stack) || stack == MainItems.bootsManure.getContainerItem(stack))
+	                if(stack.getItem() == MainItems.helmetManure || stack.getItem() == MainItems.plateManure || stack.getItem() == MainItems.bootsManure)
 	                {
-	                        return "krebsmodid:textures/armor/COWPOOP_layer_1.png";//1
+	                        return "poopmod:textures/armor/COWPOOP_layer_1.png";//1
 	                }
 	                
-	                if(stack == MainItems.legsManure.getContainerItem(stack))
+	                if(stack.getItem() == MainItems.legsManure)
 	                {
-	                        return "krebsmodid:textures/armor/COWPOOP_layer_2.png";//2
+	                        return "poopmod:textures/armor/COWPOOP_layer_2.png";//2
 	                }
 	                
 
 	                //ultimate
 	                
-	                if(stack == MainItems.helmetUltimate.getContainerItem(stack) || stack == MainItems.plateUltimate.getContainerItem(stack) || stack == MainItems.bootsUltimate.getContainerItem(stack))
+	                if(stack.getItem() == MainItems.helmetUltimate || stack.getItem() == MainItems.plateUltimate || stack.getItem() == MainItems.bootsUltimate)
 	                {
-	                        return "krebsmodid:textures/armor/ULTIMATEPOOP_layer_1.png";//1
+	                        return "poopmod:textures/armor/ULTIMATEPOOP_layer_1.png";//1
 	                }
 	                
-	                if(stack == MainItems.legsUltimate.getContainerItem(stack))
+	                if(stack.getItem() == MainItems.legsUltimate)
 	                {
-	                        return "krebsmodid:textures/armor/ULTIMATEPOOP_layer_2.png";//2
+	                        return "poopmod:textures/armor/ULTIMATEPOOP_layer_2.png";//2
 	                }
 	                
 	                
 	                //elseifnull
-	                return "krebsmodid:textures/armor/POOP_layer_1.png";//1
+	                return "poopmod:textures/armor/POOP_layer_1.png";//1
 	        }
 	        
 	        @SuppressWarnings({ "rawtypes", "unchecked" })

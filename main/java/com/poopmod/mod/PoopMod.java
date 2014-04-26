@@ -51,6 +51,7 @@ public class PoopMod{
             Registry.RegisterBlockHarvestlevel(event);
             Achievments.addAchievments(event);
             RecipeManager.addRecipes();
+            Registry.RegisterEvents();
         }
         
         @EventHandler

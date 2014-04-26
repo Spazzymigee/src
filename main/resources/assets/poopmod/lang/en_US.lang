@@ -2,7 +2,9 @@ achievement.eatShitAchieve=Got Poop
 achievement.eatShitAchieve.desc=You fool! What's wrong with you! (Eat Poop)
 achievement.eatCleanShitAchieve=Got 'Clean' Poop
 achievement.eatCleanShitAchieve.desc=That's still disgusting. (Eat Sanitized Poop)
+
 itemGroup.poopytab=PoopMod
+
 tile.toilet.name=Toilet 
 tile.poop_block.name=Poop Block
 tile.clean_poop_block.name='Sanitized' Poop Block
@@ -11,3 +13,39 @@ tile.clean_bird_poop_block.name='Sanitized' Bird Poop Block
 tile.manure_block.name=Manure Block
 tile.clean_manure_block.name='Sanitized' Manure Block
 tile.ultimate_poop_block.name=§1Ultimate Poop Alloy Block
+
+
+item.poop_ball.name=Poopball
+item.poop.name=Poop
+item.clean_poop.name=Clean Poop
+item.bird_poop.name=Bird Poop
+item.clean_bird_poop.name=Clean Bird Poop
+item.manure.name=Manure
+item.clean_manure.name=Clean Manure
+item.ultimate_poop_alloy.name=Ultimate Poop Alloy
+
+item.pickaxe_poop.name=Poop Pickaxe
+item.axe_poop.name=Poop Axe
+item.shovel_poop.name=Poop Shovel
+item.sword_poop.name=Poop Sword
+item.hoe_poop.name=Poop Hoe
+
+
+item.pickaxe_bird_poop.name=Bird Poop Pickaxe
+item.axe_bird_poop.name=Bird Poop Axe
+item.shovel_bird_poop.name=Bird Poop Shovel
+item.sword_bird_poop.name=Bird Poop Sword
+item.hoe_bird_poop.name=Bird Poop
+
+item.pickaxe_manure.name=Manure Pickaxe
+item.axe_manure.name=Manure Axe
+item.shovel_manure.name=Manure Shovel
+item.sword_manure.name=Manure Sword
+item.hoe_manure.name=Manure Hoe
+
+item.pickaxe_ultimate_poop.name=Ultimate Poop Pickaxe
+item.axe_ultimate_poop.name=Ultimate Poop Axe
+item.shovel_ultimate_poop.name=Ultimate Poop Shovel
+item.sword_ultimate_poop.name=Ultimate Poop Sword
+item.hoe_ultimate_poop.name=Ultimate Hoe
+
