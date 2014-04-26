@@ -1,0 +1,13 @@
+achievement.eatShitAchieve=Got Poop
+achievement.eatShitAchieve.desc=You fool! What's wrong with you! (Eat Poop)
+achievement.eatCleanShitAchieve=Got 'Clean' Poop
+achievement.eatCleanShitAchieve.desc=That's still disgusting. (Eat Sanitized Poop)
+itemGroup.poopytab=PoopMod
+tile.toilet.name=Toilet 
+tile.poop_block.name=Poop Block
+tile.clean_poop_block.name='Sanitized' Poop Block
+tile.bird_poop_block.name=Bird Poop Block
+tile.clean_bird_poop_block.name='Sanitized' Bird Poop Block
+tile.manure_block.name=Manure Block
+tile.clean_manure_block.name='Sanitized' Manure Block
+tile.ultimate_poop_block.name=§1Ultimate Poop Alloy Block

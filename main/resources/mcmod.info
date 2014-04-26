@@ -1,0 +1,16 @@
+[
+{
+  "modid": "poopmod",
+  "name": "Poop Mod",
+  "description": "A very poopy mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["Alex Koehn, Jared Krebs"],
+  "credits": "Alex and Jared. Everyone at MinecraftForums.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
